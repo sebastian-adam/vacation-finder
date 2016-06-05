@@ -13,3 +13,13 @@
 .select-img {
     width: 100%;
 }
+
+#tampa, #canada, #beau, #cape {
+  display: none;
+  margin: auto;
+  text-align: center;
+}
+
+span {
+  font-size: 50px;
+}
