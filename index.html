@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>NSRM</title>
+  </head>
+  <body class="container">
+    <div class="jumbotron">
+      <h1>Newly Single Roadtrip Mapper</h1>
+      <h3>From Divorcee to Anywhere, USA</h3>
+    </div>
+
+    <div id="prompt" class="container">
+      <form>
+        <h2>If you're ready to drive in a daze through countless hours of monotonous highway into the valleys of your lonesome mind, please tell us your name to begin:</h2>
+        <label for="name">NAME</label>
+        <input id="name" type="text">
+
+        <h2>When I am stuck in unmoving traffic, with no functional AC and one working windshield, I feel most comfortable in
+          <select class="form control" id="weather">
+            <option value="1">hot and humid</option>
+            <option value="2">icy</option>
+            <option value="3">rainy</option>
+            <option value="4">foggy</option>
+          </select>
+        weather.</h2>
+
+        <h2>I'd prefer to visit
+          <select class="form control" id="location">
+            <option value="1">a second-rate city</option>
+            <option value="2">complete isolation</option>
+            <option value="3">a conservative community</option>
+            <option value="4">where land meets water</option>
+          </select>
+        so I can really disconnect and focus on myself.</h2>
+
+        <h2>Please select the attraction that speaks to you.</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Water Biking</h3>
+            <label for="img" class="label">
+              <input type="radio" name="fb" value="small">
+              <img class="select-img responsive-image" src="img/waterbike.jpg">
+            </label>
+          </div>
+          <div class="col-md-3">
+            <h3>Air Chemistry Observatory</h3>
+            <label for="img" class="label">
+              <input type="radio" name="fb" value="small">
+              <img class="select-img responsive-image" src="img/observatory.jpg">
+            </label>
+          </div>
+          <div class="col-md-3">
+            <h3>World's 3rd Largest Fire Hydrant</h3>
+            <label for="img" class="label">
+              <input type="radio" name="fb" value="small">
+              <img class="select-img responsive-image" src="img/hydrant.jpg">
+            </label>
+          </div>
+          <h3>Strong Winter Storm</h3>
+          <div class="col-md-3">
+            <label for="img" class="label">
+              <input type="radio" name="fb" value="small">
+              <img class="select-img responsive-image" src="img/storm.jpg">
+            </label>
+          </div>
+        </div>
+
+        <h2>My favorite sleep setting is
+          <select class="form control" id="location">
+            <option value="1">among elderly</option>
+            <option value="2">sub-zero camping</option>
+            <option value="3">filled with colonial era embellishments</option>
+            <option value="4">a horror movie</option>
+          </select>
+          .</h2>
+
+        <h2>This test makes me miss
+          <select class="form control" id="location">
+            <option value="1">Sarah</option>
+            <option value="2">Tom</option>
+            <option value="3">Becky</option>
+            <option value="4">Blake</option>
+          </select>
+          .</h2>
+      </form>
+
+    </div>
+  </body>
+</html>
