@@ -3,139 +3,130 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="//db.onlinewebfonts.com/c/4f4bddb1873e2da16584a17929ed6eaf?family=License+Plate" rel="stylesheet" type="text/css"/>
     <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
     <title>NSRM</title>
   </head>
   <body class="container">
     <div class="jumbotron">
-      <h1>Newly Single Roadtrip Mapper</h1>
-      <h3>From Divorcee to Anywhere, USA</h3>
+      <h1>Newly Single<br>Roadtrip Mapper</h1>
+      <h3>From Divorcee to Anywhere Else USA</h3>
     </div>
     <div id="prompt" class="container">
       <form>
         <h2>If you're ready to drive in a daze through countless hours of monotonous highway into the valleys of your lonesome mind, please tell us your name to begin:</h2>
-        <label for="name">NAME</label>
-        <input id="name" type="text">
-
-        <h2>When I am stuck in unmoving traffic, with no functional AC and one working windshield, I feel most comfortable in
-          <select class="form control" id="weather">
-            <option value="1">hot and humid</option>
-            <option value="2">icy</option>
-            <option value="3">rainy</option>
-            <option value="4">foggy</option>
-          </select>
-        weather.</h2>
-
-        <h2>I'd prefer to visit
-          <select class="form control" id="location">
-            <option value="1">a second-rate city</option>
-            <option value="2">complete isolation</option>
-            <option value="3">a conservative community</option>
-            <option value="4">where land meets water</option>
-          </select>
-        so I can really disconnect and focus on myself.</h2>
-
-        <h2>Please select the attraction that speaks to you.</h2>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice" value="1" checked>
-            Water Biking
-          </label>
+        <div class="color">
+          <label for="name">NAME</label>
+          <input id="name" type="text">
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice" value="2">
-            Air Chemistry Observatory
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice" value="3">
-            World's 3rd Largest Fire Hydrant
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="choice" value="4">
-            Strong Winter Storm
-          </label>
-        </div>
-
-
-        <!-- <div class="row">
-          <div class="col-md-3">
-            <h3>Water Biking</h3>
-            <label for="img" class="label">
-              <input id="waterbike" type="radio" name="choice" value="1">
-              <img class="select-img responsive-image" src="img/waterbike.jpg">
-            </label>
+        <hr>
+        <div id="main">
+          <h2><img class="responsive-image" src="img/broken-heart.png"> When I am stuck in unmoving traffic, with no functional AC and one working windshield, I feel most comfortable in
+            <select class="select" id="weather">
+              <option value="1">hot and humid</option>
+              <option value="2">icy</option>
+              <option value="3">rainy</option>
+              <option value="4">foggy</option>
+            </select>
+          weather.</h2>
+          <hr class="interior">
+          <h2><img class="responsive-image" src="img/broken-heart.png"> I'd prefer to visit
+            <select class="select" id="location">
+              <option value="1">a second-rate city</option>
+              <option value="2">complete isolation</option>
+              <option value="3">a conservative community</option>
+              <option value="4">where land meets water</option>
+            </select>
+          so I can really disconnect and focus on myself.</h2>
+          <hr class="interior">
+          <h2><img class="responsive-image" src="img/broken-heart.png"> Please select the attraction that speaks to you.</h2>
+          <div class="radio">
+            <div class="row">
+              <div class="col-xs-3">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="choice" value="1" checked>
+                    <img class="select-img responsive-image" src="img/waterbike.jpg">
+                    Water Biking
+                  </label>
+                </div>
+              </div>
+              <div class="col-xs-3">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="choice" value="2">
+                    <img class="select-img responsive-image" src="img/observatory.jpg">
+                    Air Chemistry Observatory
+                  </label>
+                </div>
+              </div>
+              <div class="col-xs-3">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="choice" value="3">
+                    <img class="select-img responsive-image" src="img/hydrant.jpg">
+                    World's 3rd Largest Hydrant
+                  </label>
+                </div>
+              </div>
+              <div class="col-xs-3">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="choice" value="4">
+                    <img class="select-img responsive-image" src="img/storm.jpg">
+                    Strong Winter Storm
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-3">
-            <h3>Air Chemistry Observatory</h3>
-            <label for="img" class="label">
-              <input id="observatory" type="radio" name="choice" value="2">
-              <img class="select-img responsive-image" src="img/observatory.jpg">
-            </label>
-          </div>
-          <div class="col-md-3">
-            <h3>World's 3rd Largest Fire Hydrant</h3>
-            <label for="img" class="label">
-              <input id="hydrant" type="radio" name="choice" value="3">
-              <img class="select-img responsive-image" src="img/hydrant.jpg">
-            </label>
-          </div>
-          <h3>Strong Winter Storm</h3>
-          <div class="col-md-3">
-            <label for="img" class="label">
-              <input id="storm" type="radio" name="choice" value="4">
-              <img class="select-img responsive-image" src="img/storm.jpg">
-            </label>
-          </div>
-        </div> -->
-
-        <h2>My favorite sleep setting is
-          <select class="form control" id="sleep">
-            <option value="1">among elderly</option>
-            <option value="2">sub-zero camping</option>
-            <option value="3">filled with colonial era embellishments</option>
-            <option value="4">a horror movie</option>
-          </select>
+          <hr class="interior">
+          <h2><img class="responsive-image" src="img/broken-heart.png"> My favorite sleep setting is
+            <select class="select" id="sleep">
+              <option value="1">among elderly</option>
+              <option value="2">sub-zero camping</option>
+              <option value="3">filled with colonial era embellishments</option>
+              <option value="4">a horror movie</option>
+            </select>
           .</h2>
-
-        <h2>This test makes me miss
-          <select class="form control" id="miss">
-            <option name="Sarah" value="1">Sarah</option>
-            <option name="Tom" value="2">Tom</option>
-            <option name="Becky" value="3">Becky</option>
-            <option name="Blake" value="4">Blake</option>
-          </select>
+          <hr class="interior">
+          <h2><img class="responsive-image" src="img/broken-heart.png"> This test makes me miss
+            <select class="select" id="miss">
+              <option name="Sarah" value="1">Sarah</option>
+              <option name="Tom" value="2">Tom</option>
+              <option name="Becky" value="3">Becky</option>
+              <option name="Blake" value="4">Blake</option>
+            </select>
           .</h2>
-
-          <input type="submit" value="Submit">
+          </div>
+          <hr>
+          <div id="submit">
+            <input type="submit" value="Plan my trip">
+          </div>
+          <hr>
       </form>
     </div>
 
     <div id="answer">
+      <h3 id="greeting"></h3>
       <div id="tampa">
-        <h3><span id="greeting"></span><br>Get ready for <strong>Tampa Bay, FL</strong>!<br>Home to humidity and senior citizens.<br><em>You'll feel better in no time.</em></h3>
+        <h3>Get ready for <strong>Tampa Bay, FL</strong>!<br>Home to humidity and senior citizens.<br><br><em>You'll feel better in no time.</em></h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1465163033253!6m8!1m7!1ss5r5BFgs_KzSv6LkXipguw!2m2!1d27.9416325!2d-82.4590625!3f6.847145418132829!4f5.591047662861953!5f0.4000000000000002" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <div id="canada">
-        <h3>Get ready for <strong>Churchill, Manitoba, Canada</strong>!<br>Polar Bears and scientists abound.<br><em>You'll feel better in no time.</em></h3>
+        <h3>Get ready for <strong>Churchill, Manitoba, Canada</strong>!<br>Where polar bears and scientists abound.<br><br><em>You'll feel better in no time.</em></h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1465164910051!6m8!1m7!1sGbi97LpgtaGYjYIsAuGyHA!2m2!1d58.78368666845817!2d-93.68643534736859!3f335.83!4f-19.319999999999993!5f0.4000000000000002" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <div id="beau">
-        <h3>Get ready for <strong>Beaumont, TX</span>!<br>Rated saddest town in the country.<br><em>You'll feel better in no time.</em></h3>
+        <h3>Get ready for <strong>Beaumont, TX</strong>!<br>Rated saddest town in the country.<br><br><em>You'll feel better in no time.</em></h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1465165040847!6m8!1m7!1sOtkj6a8MQVmK7ALddD5mRQ!2m2!1d30.07798625237515!2d-94.12871693965798!3f85.54205766609152!4f1.5304548922120347!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <div id="cape">
-        <h3>Get ready for <strong>Ilwaco, WA!</span><br>Home to Cape Dissapointment and it's eternal fog.<br><em>You'll feel better in no time.</em></h3>
+        <h3>Get ready for <strong>Ilwaco, WA!</strong><br>Home to Cape Dissapointment and unremitting fog.<br><br><em>You'll feel better in no time.</em></h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1465165951961!6m8!1m7!1sFrHgAc3NJ9glFRbXM3V5RQ!2m2!1d46.3095904!2d-124.0647854!3f102.37!4f12.099999999999994!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
-
     </div>
-
-
   </body>
 </html>

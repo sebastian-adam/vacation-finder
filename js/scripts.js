@@ -23,11 +23,17 @@ $(document).ready(function() {
 
     if (miss === "1") {
       document.getElementById("greeting").innerHTML = "Don't worry about Sarah, " + name + ".";
-    } else if (miss === "2") {
+    }
+
+    if (miss === "2") {
       document.getElementById("greeting").innerHTML = "Don't worry about Tom, " + name + ".";
-    } else if (miss === "3") {
+    }
+
+    if (miss === "3") {
       document.getElementById("greeting").innerHTML = "Don't worry about Becky, " + name + ".";
-    } else if (miss === "4") {
+    }
+
+    if (miss === "4") {
       document.getElementById("greeting").innerHTML = "Don't worry about Blake, " + name + ".";
     }
 

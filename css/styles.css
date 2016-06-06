@@ -1,25 +1,108 @@
-.label > input {
-  visibility: hidden;
-  position: absolute;
+/*LINKS*/
+
+@import   url(http://db.onlinewebfonts.com/c/4f4bddb1873e2da16584a17929ed6eaf?family=License+Plate);
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
+/*JUMBOTRON*/
+
+.jumbotron {
+  text-align: center;
+  background-image: url(../img/roadtrip.png);
+  background-repeat: none;
+  background-size: cover;
+  font-family: license plate;
+  letter-spacing: 2px;
+  margin-top: 30px;
 }
-.label > input + img {
-  cursor:pointer;
-  border:2px solid transparent;
+.jumbotron h1 {
+  color: black;
+  text-shadow: 5px 0 white;
 }
-.label > input:checked + img {
-  border:2px solid #f00;
+.jumbotron h3 {
+  color: #fee3dd;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: 220%;
+    font-style: italic;
 }
 
+/*NAME*/
+
+.color {
+  color: white;
+  background-color: rgba(254,227,221, .5);
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  width: 200px;
+  padding: 10px 20px 20px;
+  border: black solid 1px;
+}
+.color input {
+  color: black;
+}
+
+/*MAIN CONTENT*/
+
+#main {
+  background-color: rgba(254,227,221, .5);
+  width: 100%;
+  padding: 10px 20px 20px;
+  border: black solid 1px;
+}
 .select-img {
     width: 100%;
 }
+.row {
+  margin: auto;
+  width: 90%;
+}
+label > input{
+  visibility: hidden;
+  position: absolute;
+}
+label > input + img{
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{
+  border:2px solid #f00;
+}
+h2 {
+  margin-top: 30px;
+}
+form h2:first-child {
+  margin-top: 0;
+}
+.radio {
+  text-align: center;
+}
+.interior {
+  background-color: white; height: 1px; border: 0;
+}
 
+/*RESULT*/
+#submit {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  font-family: license plate;
+}
 #tampa, #canada, #beau, #cape {
   display: none;
   margin: auto;
   text-align: center;
 }
-
-span {
+#greeting {
+  margin: auto;
+  text-align: center;
   font-size: 50px;
+}
+#answer {
+  margin-bottom: 30px;
 }
