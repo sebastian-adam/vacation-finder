@@ -23,17 +23,11 @@ $(document).ready(function() {
 
     if (miss === "1") {
       document.getElementById("greeting").innerHTML = "Don't worry about Sarah, " + name + ".";
-    }
-
-    if (miss === "2") {
+    } else if (miss === "2") {
       document.getElementById("greeting").innerHTML = "Don't worry about Tom, " + name + ".";
-    }
-
-    if (miss === "3") {
+    } else if (miss === "3") {
       document.getElementById("greeting").innerHTML = "Don't worry about Becky, " + name + ".";
-    }
-
-    if (miss === "4") {
+    } else if (miss === "4") {
       document.getElementById("greeting").innerHTML = "Don't worry about Blake, " + name + ".";
     }
 
@@ -54,10 +48,5 @@ $(document).ready(function() {
     }  else if (cape > 1) {
       $("#cape").show();
     }
-
   });
 });
-
-
-
-// Backend
